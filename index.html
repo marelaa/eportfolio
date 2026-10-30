@@ -6,7 +6,7 @@
     
     <!-- Essential SEO Meta Tags -->
     <title>GHAZAOUI Marwa - Electronics student | Portfolio</title>
-    <meta name="description" content="Portfolio of Ghazaoui Marwa, Electrnics student at ENSEEIHT specializing in embedded systems, robotics, and signal processing.">
+    <meta name="description" content="Portfolio of Ghazaoui Marwa, Electronics student at ENSEEIHT specializing in integrated systems.">
     <meta name="author" content="GHAZAOUI Marwa">
     
     <!-- Stylesheets -->
@@ -25,8 +25,8 @@
     <!-- Navigation -->    <nav class="navbar">
         <div class="nav-container">            <ul class="nav-menu">
                 <li><a href="#Welcome" class="nav-link">Welcome</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#Engineering" class="nav-link">Engineering</a></li>
+               <!-- <li><a href="#skills" class="nav-link">Skills</a></li> -->
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#cv" class="nav-link">CV</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -46,7 +46,7 @@
         </div>        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">                <h1 class="hero-title">Hello, I'm <span class="highlight metallic-blue-text">Ghazaoui Marwa</span></h1>
-                <p class="hero-subtitle"><span class="metallic-blue-text">BTech ECE Student</span> & <span class="metallic-silver-text">Embedded Systems Enthusiast</span></p>
+                <p class="hero-subtitle"><span class="metallic-blue-text">Electronics Student</span> & <span class="metallic-silver-text">Embedded Systems Enthusiast</span></p>
                 <p class="hero-description">Electronics Engineering student at <strong>ENSEIIHT</strong>, passionate about <strong>embedded systems</strong> and  <strong>robotics</strong>. Building real-world tech solutions that combine hardware and software.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -59,12 +59,12 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section">
+        <section id="Welcome" class="section">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
+                <h2 class="section-title">Welcome</h2>
+                <div class="Welcome-content">
                     <div class="about-text blur-bg">
-                        <p>I'm a <strong class="metallic-blue-text">BTech Electronics and Communication Engineering</strong> student at <strong>Cochin University of Science and Technology (CUSAT)</strong>, with a deep interest in <strong>embedded systems</strong>, <strong>robotics</strong>, and <strong>web development</strong>. I'm passionate about building real-world tech solutions that combine hardware and software in practical, meaningful ways.</p>
+                        <p>I'm a <strong class="metallic-blue-text">Electronics Engineering</strong> student at <strong>École Nationale Supérieure d'Electrotechnique, d'Electronique, d'informatique, d'Hydraulique et des Télécommunications  (ENSEEIHT)</strong>, with a deep interest in <strong>embedded systems</strong>, <strong>signal processing</strong>, and <strong> Ordinator vision</strong>. I'm passionate about building real-world tech solutions that combine hardware and software in practical, meaningful ways.</p>
                         <p>I have worked on various hands-on projects, including a <strong class="metallic-silver-text">mine rescue and detection robot</strong> powered by <span class="metallic-text">ESP32</span>, sensors, and autonomous/manual modes. I'm also actively exploring <strong>web development</strong>, creating responsive websites and continuously learning front-end and back-end technologies.</p>
                         <p>As the <strong class="metallic-text">Vice Chair of the IEEE APS CUSAT Student Branch Chapter</strong>, I help organize technical events and workshops, contributing to the student tech community.</p>
                         <div class="about-stats">
@@ -85,28 +85,31 @@
                 </div>
             </div>
         </section>
+        <!-- Engineering Section -->
+<section id="Engineering" class="section">
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                
-                <!-- Project Filter Dropdown -->
-                <div class="project-filter-container">
-                    <label for="project-filter" class="filter-label">Filter by Category:</label>
-                    <select id="project-filter" class="project-filter-dropdown">
-                        <option value="all">All Projects</option>
-                        <option value="hardware">Hardware</option>
-                        <option value="software">Software</option>
-                    </select>
-                </div>
-                
-                <div class="projects-grid">                    <div class="project-card" data-category="hardware">
-                        <div class="card-inner">
-                            <div class="project-image">
-                                <img src="img/Rescue_Bot.jpeg" alt="Mine Rescue Robot" style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                            </div>
-                            <div class="project-content">
+    <!-- Subsection: Projects -->
+    <div id="projects" class="engineering-subsection">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <!-- Project Filter Dropdown -->
+            <div class="project-filter-container">
+                <label for="project-filter" class="filter-label">Filter by Category:</label>
+                <select id="project-filter" class="project-filter-dropdown">
+                    <option value="all">All Projects</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                </select>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="hardware">
+                    <div class="card-inner">
+                        <div class="project-image">
+                            <img src="img/Rescue_Bot.jpeg" alt="Mine Rescue Robot" style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
+                        </div>
+                        <div class="project-content">
                             <h3 class="project-title metallic-silver-text">Rescue Bot</h3>
                             <p class="project-description">An innovative rescue robot powered by <strong class="metallic-text">ESP32</strong> with <strong>sensors</strong> and both <strong>autonomous and manual operation modes</strong>. Designed for mine rescue operations and detection missions, showcasing practical application in emergency scenarios.</p>
                             <div class="project-tech">
@@ -119,58 +122,59 @@
                                 <a href="https://github.com/Deratheone/Rescue-bot" target="_blank" class="project-link">GitHub</a>
                             </div>
                         </div>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="project-card" data-category="hardware">
-                        <div class="card-inner">
-                            <div class="project-image">
-                                <img src="img/esphunt.jpeg" alt="Signal Hunt Interface" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 8px;">
-                            </div>
-                            <div class="project-content">
-                                <h3 class="project-title metallic-silver-text">Signal Hunt</h3>
-                                <p class="project-description"><strong>ESP32-based treasure hunt system</strong> for educational events. Track hidden transmitters using a <strong>responsive radar interface</strong>. Developed for <strong>IEEE APS workshops</strong> to teach signal propagation principles through an interactive campus-wide game.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">ESP32</span>
-                                    <span class="tech-tag">ESP-NOW</span>
-                                    <span class="tech-tag">Arduino</span>
-                                    <span class="tech-tag">WebServer</span>
-                                    <span class="tech-tag">IoT</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Deratheone/Signal-Hunt" target="_blank" class="project-link">GitHub</a>
-                                </div>
-                            </div>
+                <div class="project-card" data-category="hardware">
+                    <div class="card-inner">
+                        <div class="project-image">
+                            <img src="img/esphunt.jpeg" alt="Signal Hunt Interface" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 8px;">
                         </div>
-                    </div>
-
-                    <div class="project-card" data-category="hardware">
-                        <div class="card-inner">
-                            <div class="project-image">
-                                <img src="img/line_following robot.jpeg" alt="Line Following Robot" style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
+                        <div class="project-content">
+                            <h3 class="project-title metallic-silver-text">Signal Hunt</h3>
+                            <p class="project-description"><strong>ESP32-based treasure hunt system</strong> for educational events. Track hidden transmitters using a <strong>responsive radar interface</strong>. Developed for <strong>IEEE APS workshops</strong> to teach signal propagation principles through an interactive campus-wide game.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">ESP32</span>
+                                <span class="tech-tag">ESP-NOW</span>
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">WebServer</span>
+                                <span class="tech-tag">IoT</span>
                             </div>
-                            <div class="project-content">
-                                <h3 class="project-title metallic-silver-text">Line Following Robot</h3>
-                                <p class="project-description"><strong>Arduino Nano-based line follower robot</strong> built for competitive events. Uses a <strong>QTR 8RC IR sensor array</strong> for line detection, a <strong>TB6612FNG motor driver</strong>, and a <strong>Hall effect sensor</strong> to trigger tasks via magnets embedded in the track.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">Arduino Nano</span>
-                                    <span class="tech-tag">QTR 8RC</span>
-                                    <span class="tech-tag">TB6612FNG</span>
-                                    <span class="tech-tag">PID Control</span>
-                                    <span class="tech-tag">Hall Sensor</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Deratheone/line_follwing_robot_PID" target="_blank" class="project-link">GitHub</a>
-                                </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Deratheone/Signal-Hunt" target="_blank" class="project-link">GitHub</a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="project-card" data-category="software">
-                        <div class="card-inner">
-                            <div class="project-image">
-                                <img src="img/statuswindow_landing_page.png" alt="StatusWindow Dashboard" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                            </div>                        <div class="project-content">
+                <div class="project-card" data-category="hardware">
+                    <div class="card-inner">
+                        <div class="project-image">
+                            <img src="img/line_following robot.jpeg" alt="Line Following Robot" style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title metallic-silver-text">Line Following Robot</h3>
+                            <p class="project-description"><strong>Arduino Nano-based line follower robot</strong> built for competitive events. Uses a <strong>QTR 8RC IR sensor array</strong> for line detection, a <strong>TB6612FNG motor driver</strong>, and a <strong>Hall effect sensor</strong> to trigger tasks via magnets embedded in the track.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Arduino Nano</span>
+                                <span class="tech-tag">QTR 8RC</span>
+                                <span class="tech-tag">TB6612FNG</span>
+                                <span class="tech-tag">PID Control</span>
+                                <span class="tech-tag">Hall Sensor</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Deratheone/line_follwing_robot_PID" target="_blank" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="software">
+                    <div class="card-inner">
+                        <div class="project-image">
+                            <img src="img/statuswindow_landing_page.png" alt="StatusWindow Dashboard" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="project-content">
                             <h3 class="project-title metallic-blue-text">StatusWindow</h3>
                             <p class="project-description">A <strong>manga-inspired status window</strong> that brings <strong>RPG-style character progression</strong> to real life. Track your stats, gain XP, and level up through real-world activities with beautiful blue status windows.</p>
                             <div class="project-tech">
@@ -184,14 +188,15 @@
                                 <a href="https://github.com/Deratheone/statuswindow" target="_blank" class="project-link">GitHub</a>
                             </div>
                         </div>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="project-card" data-category="software">
-                        <div class="card-inner">
-                            <div class="project-image">
-                                <img src="img/smartpaw_landing_page.png" alt="SmartPaw Pet Care Platform" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                            </div>                        <div class="project-content">
+                <div class="project-card" data-category="software">
+                    <div class="card-inner">
+                        <div class="project-image">
+                            <img src="img/smartpaw_landing_page.png" alt="SmartPaw Pet Care Platform" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="project-content">
                             <h3 class="project-title metallic-text">SmartPaw</h3>
                             <p class="project-description">A <strong>comprehensive pet care platform</strong> connecting pet owners with trusted professionals. Features <strong>pet boarding</strong>, <strong>grooming services</strong>, and secure user authentication with modern responsive design.</p>
                             <div class="project-tech">
@@ -204,85 +209,93 @@
                                 <a href="https://www.smartpaw.in/" target="_blank" class="project-link">Visit Website</a>
                             </div>
                         </div>
-                        </div>
                     </div>
+                </div>
 
-                    <div class="project-card" data-category="software">
-                        <div class="card-inner">
-                            <div class="project-image">
-                                <img src="img/kudumbAISree.png" alt="KudumbAISree AI Conversation Simulator" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                <div class="project-card" data-category="software">
+                    <div class="card-inner">
+                        <div class="project-image">
+                            <img src="img/kudumbAISree.png" alt="KudumbAISree AI Conversation Simulator" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title metallic-purple-text">KudumbAISree</h3>
+                            <p class="project-description">An <strong>interactive AI-powered conversation simulator</strong> bringing Kerala-style <strong>paradushanam</strong> to life. Experience <strong>chit-chat conversations</strong> with AI characters like Aliyamma, Chako, Babu, and Fathima, complete with <strong>character-specific English voices</strong> and a useless voice engine.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Google Gemini AI</span>
+                                <span class="tech-tag">Web Speech API</span>
+                                <span class="tech-tag">Tailwind CSS</span>
                             </div>
-                            <div class="project-content">
-                                <h3 class="project-title metallic-purple-text">KudumbAISree</h3>
-                                <p class="project-description">An <strong>interactive AI-powered conversation simulator</strong> bringing Kerala-style <strong>paradushanam</strong> to life. Experience <strong>chit-chat conversations</strong> with AI characters like Aliyamma, Chako, Babu, and Fathima, complete with <strong>character-specific English voices</strong> and a useless voice engine.</p>
-                                <div class="project-tech">
-                                    <span class="tech-tag">React</span>
-                                    <span class="tech-tag">TypeScript</span>
-                                    <span class="tech-tag">Google Gemini AI</span>
-                                    <span class="tech-tag">Web Speech API</span>
-                                    <span class="tech-tag">Tailwind CSS</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://kudumbaisree.vercel.app/" target="_blank" class="project-link">Live Demo</a>
-                                    <a href="https://github.com/Deratheone/kudumbAIsree" target="_blank" class="project-link">GitHub</a>
-                                </div>
+                            <div class="project-links">
+                                <a href="https://kudumbaisree.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+                                <a href="https://github.com/Deratheone/kudumbAIsree" target="_blank" class="project-link">GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title">Skills & Technologies</h2>                <div class="skills-grid">
-                    <div class="skill-category">
-                        <div class="card-inner">
-                            <h3 class="skill-category-title">Programming Languages</h3>
-                            <div class="skills-list">
+    <!-- Subsection: Skills -->
+    <div id="skills" class="engineering-subsection">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="card-inner">
+                        <h3 class="skill-category-title">Programming Languages</h3>
+                        <div class="skills-list">
                             <span class="skill-item">C</span>
                             <span class="skill-item">C++</span>
                             <span class="skill-item">Java</span>
                             <span class="skill-item">JavaScript</span>
                         </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="card-inner">
+                        <h3 class="skill-category-title">Electronics &amp; Embedded Systems</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">Arduino</span>
+                            <span class="skill-item">Microcontrollers</span>
+                            <span class="skill-item">Sensors &amp; IoT</span>
+                            <span class="skill-item">Circuit Design</span>
+                            <span class="skill-item">Robotics</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <div class="card-inner">
-                            <h3 class="skill-category-title">Electronics & Embedded Systems</h3>
-                            <div class="skills-list">
-                                <span class="skill-item">Arduino</span>
-                                <span class="skill-item">Microcontrollers</span>
-                                <span class="skill-item">Sensors & IoT</span>
-                                <span class="skill-item">Circuit Design</span>
-                                <span class="skill-item">Robotics</span>
-                            </div>
+                </div>
+                <div class="skill-category">
+                    <div class="card-inner">
+                        <h3 class="skill-category-title">Web Development</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <div class="card-inner">
-                            <h3 class="skill-category-title">Web Development</h3>
-                            <div class="skills-list">
-                                <span class="skill-item">HTML5</span>
-                                <span class="skill-item">CSS3</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <div class="card-inner">
-                            <h3 class="skill-category-title">Tools & Platforms</h3>
-                            <div class="skills-list">
-                                <span class="skill-item">Git</span>
-                                <span class="skill-item">GitHub</span>
-                                <span class="skill-item">Vercel</span>
-                                <span class="skill-item">Supabase</span>
-                            </div>
+                </div>
+                <div class="skill-category">
+                    <div class="card-inner">
+                        <h3 class="skill-category-title">Tools &amp; Platforms</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">GitHub</span>
+                            <span class="skill-item">Vercel</span>
+                            <span class="skill-item">Supabase</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>        <!-- Experience Section -->
+        </div>
+    </div>
+
+</section>
+      
+                  
+                    
+           <!-- Experience Section -->
         <section id="experience" class="section">
             <div class="container">
                 <h2 class="section-title metallic-blue-text">Experience</h2>
