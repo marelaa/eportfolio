@@ -966,7 +966,11 @@ body {
     flex-direction: column;
     gap: 1.5rem;
 }
-
+<style>
+    .engineering-subsection + .engineering-subsection {
+        margin-top: 5rem;
+    }
+</style>
 .contact-method {
     display: flex;
     align-items: center;
