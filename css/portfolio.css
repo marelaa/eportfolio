@@ -834,14 +834,21 @@ body {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
     margin-top: 2rem;
     justify-items: center;
 }
+.skills-grid .skill-category {
+    grid-column: span 2;
+}
 
 .skills-grid .skill-category:nth-child(4) {
-    grid-column: 2;
+    grid-column: 2 / span 2;
+}
+
+.skills-grid .skill-category:nth-child(5) {
+    grid-column: 4 / span 2;
 }
 
 .skill-category {
@@ -940,7 +947,28 @@ body {
     background: rgba(60, 72, 250, 0.2);
     transform: translateY(-2px);
 }
+/* Icon + text inside each pill */
+.skill-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
+.skill-item i {
+    font-size: 1.1rem;
+}
+
+/* Mobile / tablet: one column */
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .skills-grid .skill-category,
+    .skills-grid .skill-category:nth-child(4),
+    .skills-grid .skill-category:nth-child(5) {
+        grid-column: auto;
+    }
+}
 /* Contact Section */
 .contact-content {
     max-width: 700px;
