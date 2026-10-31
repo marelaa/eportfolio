@@ -933,18 +933,18 @@ body {
 }
 
 .skill-item {
-    background: rgba(60, 72, 250, 0.1);
-    color: var(--secondary-color);
+    background: rgba(60, 72, 250, 0.15);
+    color: var(--text-primary);
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-size: 0.875rem;
-    font-weight: 500;
-    border: 1px solid rgba(60, 72, 250, 0.3);
+    font-weight: 600;
+    border: 1px solid rgba(60, 72, 250, 0.5);
     transition: var(--transition);
 }
 
 .skill-item:hover {
-    background: rgba(60, 72, 250, 0.2);
+    background: rgba(60, 72, 250, 0.3);
     transform: translateY(-2px);
 }
 /* Icon + text inside each pill */
@@ -955,6 +955,7 @@ body {
 }
 
 .skill-item i {
+    color: #7d86ff;
     font-size: 1.1rem;
 }
 
