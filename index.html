@@ -14,6 +14,19 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/demo2.css" />
     <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+    <style>
+      .mobility-content { max-width: 900px; margin: 0 auto; }
+      .mobility-card { padding: 2rem; }
+      .mobility-card .achievement-item::before { display: none; } /* emoji already acts as the bullet */
+      .mobility-languages { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+      .mobility-lang { display: flex; align-items: center; gap: 1rem; }
+      .mobility-level { color: var(--text-main); font-weight: 500; }
+      .mobility-card .experience-summary { margin-bottom: 1.25rem; }
+      @media (max-width: 480px) {
+        .mobility-card { padding: 1.25rem; }
+        .mobility-languages { flex-direction: column; align-items: center; gap: 1rem; }
+  }
+</style>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +42,7 @@
                 <li><a href="#Engineering" class="nav-link">Engineering</a></li>
                <!-- <li><a href="#skills" class="nav-link">Skills</a></li> -->
                 <li><a href="#Career" class="nav-link">Career</a></li>
-                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#Mobility" class="nav-link">CV</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -414,7 +427,69 @@
 
       </div>
     </div>
+    -->
+<section id="Mobility" class="section">
+  <div class="container">
+    <h2 class="section-title">Mobility</h2>
+    <p class="section-subtitle">Language skills and international experience.</p>
 
+    <div class="mobility-content">
+
+      <!-- Languages -->
+      <div class="Career-card mobility-card">
+        <h3 class="subsection-title">Languages</h3>
+        <div class="mobility-languages">
+          <div class="mobility-lang">
+            <span class="skill-item">English</span>
+            <span class="mobility-level">Fluent</span>
+          </div>
+          <div class="mobility-lang">
+            <span class="skill-item">French</span>
+            <span class="mobility-level">Bilingual</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current mobility -->
+      <div class="Career-card mobility-card">
+        <h3 class="subsection-title">Current Mobility</h3>
+
+        <div class="experience-summary">
+          <p>
+            I am currently on an international mobility within a
+            <strong>double-degree programme</strong> between
+            <strong>ENSAM Rabat</strong> and <strong>ENSEEIHT</strong>.
+            Studying across two institutions and two countries exposes me to
+            different teaching methods and engineering cultures.
+          </p>
+        </div>
+
+        <div class="experience-achievements">
+          <div class="achievement-item">
+            <span class="achievement-icon">🤝</span>
+            <span>Strengthened soft skills: adaptability and communication in multicultural environments</span>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-icon">🌍</span>
+            <span>Discovery of other cultures and ways of collaborating across them</span>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-icon">⚙️</span>
+            <span>High-level technical experience in electronics, embedded systems and AI</span>
+          </div>
+        </div>
+
+        <div class="experience-tech">
+          <span class="tech-tag">Adaptability</span>
+          <span class="tech-tag">Communication</span>
+          <span class="tech-tag">Intercultural</span>
+          <span class="tech-tag">Double degree</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     <!-- ===== Subsection 2: CV ===== -->
     <div id="cv" class="career-subsection">
       <h3 class="subsection-title metallic-silver-text">Curriculum Vitae</h3>
