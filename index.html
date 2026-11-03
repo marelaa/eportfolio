@@ -52,7 +52,14 @@
             </div>
         </div>
     </nav>
-
+<style>
+  #Engagement .project-image { height: 200px; }
+  #Engagement .project-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #Engagement .experience-time { margin-bottom: .75rem; }
+  #Engagement .eng-points { display: flex; flex-direction: column; gap: .6rem; margin: 1rem 0 1.25rem; }
+  #Engagement .achievement-item { font-size: .92rem; color: var(--text-secondary); }
+  #Engagement .achievement-item::before { display: none; } /* the emoji acts as the bullet */
+</style>
     <main>
         <!-- Canvas Background -->
         <div class="content content--canvas">
@@ -428,68 +435,8 @@
       </div>
     </div>
     -->
-<section id="Mobility" class="section">
-  <div class="container">
-    <h2 class="section-title">Mobility</h2>
-    <p class="section-subtitle">Language skills and international experience.</p>
 
-    <div class="mobility-content">
 
-      <!-- Languages -->
-      <div class="Career-card mobility-card">
-        <h3 class="subsection-title">Languages</h3>
-        <div class="mobility-languages">
-          <div class="mobility-lang">
-            <span class="skill-item">English</span>
-            <span class="mobility-level">Fluent</span>
-          </div>
-          <div class="mobility-lang">
-            <span class="skill-item">French</span>
-            <span class="mobility-level">Bilingual</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Current mobility -->
-      <div class="Career-card mobility-card">
-        <h3 class="subsection-title">Current Mobility</h3>
-
-        <div class="experience-summary">
-          <p>
-            I am currently on an international mobility within a
-            <strong>double-degree programme</strong> between
-            <strong>ENSAM Rabat</strong> and <strong>ENSEEIHT</strong>.
-            Studying across two institutions and two countries exposes me to
-            different teaching methods and engineering cultures.
-          </p>
-        </div>
-
-        <div class="experience-achievements">
-          <div class="achievement-item">
-            <span class="achievement-icon">🤝</span>
-            <span>Strengthened soft skills: adaptability and communication in multicultural environments</span>
-          </div>
-          <div class="achievement-item">
-            <span class="achievement-icon">🌍</span>
-            <span>Discovery of other cultures and ways of collaborating across them</span>
-          </div>
-          <div class="achievement-item">
-            <span class="achievement-icon">⚙️</span>
-            <span>High-level technical experience in electronics, embedded systems and AI</span>
-          </div>
-        </div>
-
-        <div class="experience-tech">
-          <span class="tech-tag">Adaptability</span>
-          <span class="tech-tag">Communication</span>
-          <span class="tech-tag">Intercultural</span>
-          <span class="tech-tag">Double degree</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
     <!-- ===== Subsection 2: CV ===== -->
     <div id="cv" class="career-subsection">
       <h3 class="subsection-title metallic-silver-text">Curriculum Vitae</h3>
@@ -561,6 +508,204 @@
     </div>
 
   </div>
+</section>
+<section id="Mobility" class="section">
+  <div class="container">
+    <h2 class="section-title">Mobility</h2>
+    <p class="section-subtitle">Language skills and international experience.</p>
+
+    <div class="mobility-content">
+
+      <!-- Languages -->
+      <div class="Career-card mobility-card">
+        <h3 class="subsection-title">Languages</h3>
+        <div class="mobility-languages">
+          <div class="mobility-lang">
+            <span class="skill-item">English</span>
+            <span class="mobility-level">Fluent</span>
+          </div>
+          <div class="mobility-lang">
+            <span class="skill-item">French</span>
+            <span class="mobility-level">Bilingual</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current mobility -->
+      <div class="Career-card mobility-card">
+        <h3 class="subsection-title">Current Mobility</h3>
+
+        <div class="experience-summary">
+          <p>
+            I am currently on an international mobility within a
+            <strong>double-degree programme</strong> between
+            <strong>ENSAM Rabat</strong> and <strong>ENSEEIHT</strong>.
+            Studying across two institutions and two countries exposes me to
+            different teaching methods and engineering cultures.
+          </p>
+        </div>
+
+        <div class="experience-achievements">
+          <div class="achievement-item">
+            <span class="achievement-icon">🤝</span>
+            <span>Strengthened soft skills: adaptability and communication in multicultural environments</span>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-icon">🌍</span>
+            <span>Discovery of other cultures and ways of collaborating across them</span>
+          </div>
+          <div class="achievement-item">
+            <span class="achievement-icon">⚙️</span>
+            <span>High-level technical experience in electronics, embedded systems and AI</span>
+          </div>
+        </div>
+
+        <div class="experience-tech">
+          <span class="tech-tag">Adaptability</span>
+          <span class="tech-tag">Communication</span>
+          <span class="tech-tag">Intercultural</span>
+          <span class="tech-tag">Double degree</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<section id="Engagement" class="section">
+  <div class="container">
+    <h2 class="section-title">Engagement</h2>
+    <p class="section-subtitle">Volunteering, leadership and community involvement.</p>
+
+    <div class="projects-grid">
+
+      <!-- 1. COP1 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="project-image"><img src="img/cop1.jpeg" alt="COP1 food distribution" loading="lazy"></div>
+          <div class="project-content">
+            <h3 class="project-title">🥖 Volunteer – COP1</h3>
+            <p class="experience-time">Since October · Ongoing</p>
+            <p class="project-description">
+              Regular volunteer in <strong>food distribution</strong> for people in need.
+              Each session is a team effort that requires clear coordination between volunteers.
+            </p>
+            <div class="eng-points">
+              <div class="achievement-item"><span class="achievement-icon">🤝</span><span>Working in a group and communicating clearly to keep the distribution running smoothly</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🗂️</span><span>Organising and managing the distribution process with the rest of the team</span></div>
+              <div class="achievement-item"><span class="achievement-icon">❤️</span><span>Direct contact with people in need, developing empathy and a sense of service</span></div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Teamwork</span>
+              <span class="tech-tag">Communication</span>
+              <span class="tech-tag">Organisation</span>
+              <span class="tech-tag">Solidarity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. AMGE Caravane -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="project-image"><img src="img/amge.jpeg" alt="AMGE Caravane" loading="lazy"></div>
+          <div class="project-content">
+            <h3 class="project-title">🚌 Volunteer – AMGE Caravane</h3>
+            <p class="experience-time">Ongoing</p>
+            <p class="project-description">
+              Member of the <strong>Association of Moroccan Students in Grandes Écoles (AMGE)</strong>,
+              taking part in conferences and in the organisation of events.
+            </p>
+            <div class="eng-points">
+              <div class="achievement-item"><span class="achievement-icon">🎤</span><span>Attending conferences to learn from professionals and share experiences</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🗓️</span><span>Helping organise events alongside other students from Grandes Écoles</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🌐</span><span>Building a network of students and professionals</span></div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Event organisation</span>
+              <span class="tech-tag">Networking</span>
+              <span class="tech-tag">Conferences</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Comité Forum -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="project-image"><img src="img/forum.jpeg" alt="Comité Forum ENSAM Rabat" loading="lazy"></div>
+          <div class="project-content">
+            <h3 class="project-title">📣 Communication Manager – Forum Committee, ENSAM Rabat</h3>
+            <p class="experience-time">February – August</p>
+            <p class="project-description">
+              In charge of <strong>communication</strong> for the school forum, from the first
+              announcements to the day of the event.
+            </p>
+            <div class="eng-points">
+              <div class="achievement-item"><span class="achievement-icon">⏱️</span><span>Time management: balancing deadlines, studies and a long preparation period</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🗣️</span><span>Convincing and engaging people, including HR professionals, to attend the forum</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🛠️</span><span>Using organisation tools to plan tasks and coordinate the team</span></div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Communication</span>
+              <span class="tech-tag">Time management</span>
+              <span class="tech-tag">Persuasion</span>
+              <span class="tech-tag">Organisation tools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Comité Social et Culturel -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="project-image"><img src="img/social-cultural.jpeg" alt="Social and Cultural Committee" loading="lazy"></div>
+          <div class="project-content">
+            <h3 class="project-title">📚 Volunteer – Social &amp; Cultural Committee, ENSAM Rabat</h3>
+            <p class="experience-time">March – June 2024/2025</p>
+            <p class="project-description">
+              <strong>Taught high-school students</strong> as part of the committee's educational actions.
+            </p>
+            <div class="eng-points">
+              <div class="achievement-item"><span class="achievement-icon">💡</span><span>Learned to express my ideas simply, so that everyone can understand</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🎓</span><span>Supported and encouraged younger students in their learning</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🧭</span><span>Developed patience, pedagogy and confidence when speaking</span></div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Teaching</span>
+              <span class="tech-tag">Pedagogy</span>
+              <span class="tech-tag">Mentoring</span>
+              <span class="tech-tag">Social impact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Olympiade -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="project-image"><img src="img/olympiade.jpeg" alt="Olympiade ENSAM Rabat" loading="lazy"></div>
+          <div class="project-content">
+            <h3 class="project-title">🏅 Volunteer – Olympiade ENSAM Rabat</h3>
+            <p class="experience-time">2024/2025</p>
+            <p class="project-description">
+              Took part in the <strong>organisation of the school's Olympiade</strong>,
+              helping plan and run the event.
+            </p>
+            <div class="eng-points">
+              <div class="achievement-item"><span class="achievement-icon">📋</span><span>Contributing to the planning and day-to-day running of a large student event</span></div>
+              <div class="achievement-item"><span class="achievement-icon">🤝</span><span>Working with many teams to deliver the event together</span></div>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Event organisation</span>
+              <span class="tech-tag">Teamwork</span>
+              <span class="tech-tag">Sport</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 </section>
         
         <!-- Contact Section -->
