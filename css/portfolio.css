@@ -59,46 +59,63 @@
     font-weight: 500;
     color: var(--text-secondary);
 }
-.project-card-split .card-inner {
-    display: flex;
-    flex-direction: row-reverse; /* l'image (1er élément) passe à droite */
-    align-items: stretch;
-    gap: 24px;
-}
 
 .project-card-split .card-inner {
-    align-items: center;          /* centre verticalement image et texte */
+    display: flex;
+    flex-direction: row-reverse;   /* image à droite */
+    align-items: stretch;
+    gap: 0;
+    min-height: 340px;             /* carte un peu plus haute */
+}
+
+/* Deux colonnes de même largeur */
+.project-card-split .project-image,
+.project-card-split .project-content {
+    flex: 1 1 50%;
+    width: 50%;
+    min-width: 0;
 }
 
 .project-card-split .project-image {
-    flex: 0 0 24%;                /* image plus étroite */
-    height: 280px;                /* proche de la hauteur du texte */
+    height: auto;
     min-height: 0;
-    align-self: center;
+    background: none !important;   /* supprime le fond rose/violet */
+    border: none !important;
+    box-shadow: none !important;
+    overflow: hidden;
 }
 
 .project-card-split .project-image img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain !important;   /* montre toute la carte électronique */
-    object-position: center !important;
+    object-fit: cover !important;  /* remplit la zone, sans bandes */
+    object-position: center 45% !important;
+    transform: scale(1.1);         /* petit zoom supplémentaire */
+    border-radius: 0 !important;
 }
+
 .project-card-split .project-content {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       /* texte centré verticalement */
+    padding: 28px 32px;
     text-align: left;
 }
 
-/* Sur mobile : retour à l'empilement image au-dessus, texte en dessous */
 @media (max-width: 768px) {
     .project-card-split .card-inner {
         flex-direction: column;
+        min-height: 0;
+    }
+    .project-card-split .project-image,
+    .project-card-split .project-content {
+        flex: none;
+        width: 100%;
     }
     .project-card-split .project-image {
-        flex: none;
-        height: 220px;
+        height: 260px;
     }
 }
-
 .project-filter-dropdown {
     padding: 0.75rem 2rem 0.75rem 1rem;
     background: rgba(15, 15, 35, 0.95);
