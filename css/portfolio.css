@@ -66,12 +66,23 @@
     gap: 24px;
 }
 
-.project-card-split .project-image {
-    flex: 0 0 40%;
-    height: auto;
-    min-height: 240px;
+.project-card-split .card-inner {
+    align-items: center;          /* centre verticalement image et texte */
 }
 
+.project-card-split .project-image {
+    flex: 0 0 24%;                /* image plus étroite */
+    height: 280px;                /* proche de la hauteur du texte */
+    min-height: 0;
+    align-self: center;
+}
+
+.project-card-split .project-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;   /* montre toute la carte électronique */
+    object-position: center !important;
+}
 .project-card-split .project-content {
     flex: 1;
     text-align: left;
