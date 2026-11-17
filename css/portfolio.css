@@ -40,13 +40,7 @@
   border-radius: 8px;
 }
 .Career-card + .Career-card { margin-top: 2rem; }
-.yazaki-gallery img {
-    width: 100% !important;
-    height: 220px !important;      /* environ la moitié de la hauteur actuelle */
-    min-height: 0 !important;
-    object-fit: contain !important; /* photo entière visible = dézoom */
-    background: rgba(0, 0, 0, 0.3);
-}
+
 
 @media (max-width: 600px) {
   .Career-gallery { grid-template-columns: 1fr; }
@@ -2366,6 +2360,44 @@ html {
     
     .experience-role {
         font-size: 1.2rem;
+    }
+}
+/* ===== Carte YAZAKI : texte à gauche, photos à droite ===== */
+.yazaki-card {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.yazaki-card .experience-details {
+    order: 1;
+}
+
+.yazaki-card .yazaki-gallery {
+    order: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.yazaki-gallery img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 3 / 4;
+    object-fit: cover !important;
+    object-position: center;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .yazaki-card {
+        grid-template-columns: 1fr;
+    }
+    .yazaki-card .yazaki-gallery {
+        order: 0;
     }
 }
 
