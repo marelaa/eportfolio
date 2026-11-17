@@ -2391,6 +2391,42 @@ html {
     object-position: center;
     border-radius: 8px;
 }
+/* Welcome : texte à gauche, photo à droite */
+.welcome-split {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.welcome-split .about-text {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.welcome-photo img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center top;   /* garde le visage dans le cadre */
+    border-radius: 18px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .welcome-split {
+        grid-template-columns: 1fr;
+    }
+    .welcome-photo {
+        order: -1;                 /* photo au-dessus du texte sur mobile */
+    }
+    .welcome-photo img {
+        max-height: 360px;
+    }
+}
 
 @media (max-width: 768px) {
     .yazaki-card {
