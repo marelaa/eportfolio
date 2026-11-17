@@ -65,7 +65,7 @@
     flex-direction: row-reverse;   /* image à droite */
     align-items: stretch;
     gap: 0;
-    min-height: 0;             /* carte un peu plus haute */
+    min-height: 370px;             /* carte un peu plus haute */
 }
 
 /* Deux colonnes de même largeur */
@@ -78,19 +78,28 @@
 
 .project-card-split .project-image {
     position: relative;
-    height: 220px;          /* hauteur voulue de la carte */
+    height: auto;          /* hauteur voulue de la carte */
     overflow: hidden;
+}
+
+.project-card-split .project-image {
+    position: relative;
+    height: auto;           /* on enlève les 220px fixes */
+    align-self: stretch;    /* l'image prend toute la hauteur de la carte */
+    overflow: hidden;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .project-card-split .project-image img {
     position: absolute;
     inset: 0;
-}
-.project-card-split .project-image img {
-   
-    object-fit: cover !important;  /* remplit la zone, sans bandes */
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
     object-position: center 45% !important;
-    transform: scale(1.0);         /* petit zoom supplémentaire */
+    transform: scale(1.0);
     border-radius: 0 !important;
 }
 
@@ -100,6 +109,18 @@
     justify-content: center;       /* texte centré verticalement */
     padding: 14px 16px;
     text-align: left;
+}
+.project-card-split .project-title {
+    font-size: 1.4rem;
+}
+
+.project-card-split .project-description {
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+.project-card-split .tech-tag {
+    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
