@@ -40,6 +40,13 @@
   border-radius: 8px;
 }
 .Career-card + .Career-card { margin-top: 2rem; }
+.yazaki-gallery img {
+    width: 100% !important;
+    height: 220px !important;      /* environ la moitié de la hauteur actuelle */
+    min-height: 0 !important;
+    object-fit: contain !important; /* photo entière visible = dézoom */
+    background: rgba(0, 0, 0, 0.3);
+}
 
 @media (max-width: 600px) {
   .Career-gallery { grid-template-columns: 1fr; }
