@@ -87,8 +87,7 @@
     inset: 0;
 }
 .project-card-split .project-image img {
-    width: 100% !important;
-    height: 100% !important;
+   
     object-fit: cover !important;  /* remplit la zone, sans bandes */
     object-position: center 45% !important;
     transform: scale(1.0);         /* petit zoom supplémentaire */
